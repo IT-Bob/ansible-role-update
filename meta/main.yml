@@ -1,0 +1,6 @@
+---
+# meta file for update
+
+galaxy_info:
+  author: Alexis G.
+  description: upgrade all the packages
