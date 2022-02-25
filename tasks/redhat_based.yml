@@ -1,0 +1,8 @@
+---
+# upgrade packages with dnf
+- name: upgrade packages with dnf
+  ansible.builtin.dnf:
+    name: "*"
+    state: latest
+    update_cache: yes
+  become: yes

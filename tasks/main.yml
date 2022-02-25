@@ -1,0 +1,8 @@
+---
+# main file for update
+- ansible.builtin.import_tasks: arch_based.yml
+  when: ansible_os_family | lower == 'archlinux'
+- ansible.builtin.import_tasks: debian_based.yml
+  when: ansible_os_family | lower == 'debian'
+- ansible.builtin.import_tasks: redhat_based.yml
+  when: ansible_os_family | lower == 'redhat'
